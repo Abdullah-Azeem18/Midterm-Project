@@ -43,12 +43,20 @@ ul li {
     margin: 0 auto;
 }
 
+.primary-btn {
+    background-color: var(--light);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1rem 1.6rem;
+    font-weight: 500;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
     padding: 10px 12px;
 }
 
@@ -67,4 +75,31 @@ ul li {
 
 .navbar ul li a {
     color: var(--light);
+}
+
+/* Header */
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('./assets/img/bg.jpg') no-repeat center center/cover;
+}
+
+.header-content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+}
+
+.header-content .title {
+    font-size: 6rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-content .sub-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
 }
